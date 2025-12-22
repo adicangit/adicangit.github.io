@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1 class="site-title"><a href="index.html">Your Name</a></h1>
+      <a href="index.html" class="logo">YN</a>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="talks.html">Talks</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -20,51 +23,79 @@
       </nav>
     </header>
 
-    <hr>
+    <main class="home">
+      <section class="hero">
+        <div class="hero-content">
+          <div class="greeting">Hello, I'm</div>
+          <h1>Your Name</h1>
+          <p class="tagline">Software Engineer & Builder</p>
+        </div>
+        <div class="profile-image-container">
+          <!-- Add your photo as profile.jpg in images folder -->
+          <div class="profile-placeholder">YN</div>
+          <!-- <img src="images/profile.jpg" alt="Your Name" class="profile-image"> -->
+        </div>
+      </section>
 
-    <main>
-      <!-- Uncomment and add your photo -->
-      <!-- <img src="images/profile.jpg" alt="Your Name" class="profile-image"> -->
+      <section class="about fade-in">
+        <p>
+          I'm a software engineer based in <span class="highlight">San Francisco</span>, passionate about 
+          building products that make a difference. Currently leading engineering at 
+          <a href="https://example.com" class="company-link">Your Company</a>.
+        </p>
+        <p>
+          Previously, I worked at <a href="#">Google</a> and <a href="#">Stripe</a>, 
+          where I focused on scalable systems and developer tools. I'm also a 
+          <a href="#">Georgia Tech</a> alumnus.
+        </p>
+      </section>
 
-      <p>
-        I am <strong>Your Name</strong>, a software engineer based in Your City.
-      </p>
+      <section class="current fade-in">
+        <h2>Currently</h2>
+        <div class="current-grid">
+          <div class="current-item">
+            <span class="current-label">Building</span>
+            <span class="current-value">Developer tools at Your Company</span>
+          </div>
+          <div class="current-item">
+            <span class="current-label">Learning</span>
+            <span class="current-value">Rust & Systems Programming</span>
+          </div>
+          <div class="current-item">
+            <span class="current-label">Reading</span>
+            <span class="current-value">Designing Data-Intensive Applications</span>
+          </div>
+        </div>
+      </section>
 
-      <p>
-        Currently, I work at <a href="https://example.com"><strong>Your Company</strong></a> 
-        where I focus on building great products. Previously, I worked at 
-        <a href="https://example.com">Previous Company</a> doing interesting things.
-      </p>
-
-      <p>
-        I'm passionate about technology, open source, and building tools that help people.
-      </p>
-
-      <hr>
-
-      <h2>What I'm Working On</h2>
-      <ul>
-        <li>Building cool projects at my day job</li>
-        <li>Contributing to open source</li>
-        <li>Writing about technology and software development</li>
-      </ul>
-
-      <hr>
-
-      <p>Feel free to reach out if you want to chat!</p>
+      <section class="connect fade-in">
+        <h2>Let's Connect</h2>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/your-username" class="social-link">
+            <span class="social-icon">in</span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/your-username" class="social-link">
+            <span class="social-icon">gh</span>
+            <span>GitHub</span>
+          </a>
+          <a href="https://twitter.com/your-username" class="social-link">
+            <span class="social-icon">tw</span>
+            <span>Twitter</span>
+          </a>
+          <a href="mailto:your.email@example.com" class="social-link">
+            <span class="social-icon">@</span>
+            <span>Email</span>
+          </a>
+        </div>
+      </section>
     </main>
 
-    <hr>
-
     <footer>
-      <p class="social-links">
-        <a href="https://linkedin.com/in/your-username">LinkedIn</a> |
-        <a href="https://github.com/your-username">GitHub</a> |
-        <a href="https://twitter.com/your-username">Twitter</a> |
-        <a href="mailto:your.email@example.com">Email</a>
-      </p>
-      <p class="copyright">&copy; 2024 Your Name. All rights reserved.</p>
+      <p>&copy; 2024 Your Name. Crafted with care.</p>
     </footer>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
