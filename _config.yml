@@ -1,0 +1,21 @@
+# Site Settings
+title: Aditya Chopra
+description: Building replibly
+url: "https://adicangit.github.io" # Your GitHub Pages URL
+baseurl: "" # Leave empty if using username.github.io
+
+# Author Info
+author:
+  name: Aditya Chopra
+  email: chopraaditya63@gmail.com
+  linkedin: chopra aditya
+  github: adicangit
+
+# Build Settings
+markdown: kramdown
+permalink: /blog/:title/
+
+# Plugins (these work on GitHub Pages)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
