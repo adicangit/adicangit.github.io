@@ -1,98 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Chopra | Strategic Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'firm-navy': '#0f172a',
+                        'firm-gray': '#334155',
+                        'firm-light': '#f8fafc',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <a href="index.html" class="logo">Aditya Chopra</a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <!-- <li><a href="talks.html">Talks</a></li>
-          <li><a href="blog.html">Blog</a></li> -->
-        </ul>
-      </nav>
-    </header>
+<body class="bg-white text-firm-gray antialiased selection:bg-gray-200 selection:text-black">
 
-    <main class="home">
-      <section class="hero">
-        <div class="hero-content">
-          <div class="greeting">Hello, I'm</div>
-          <h1>Aditya Chopra</h1>
-          <p class="tagline"> Analyst / Full Stack Developer </p>
+    <nav class="bg-white/90 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="font-serif text-2xl font-bold text-firm-navy tracking-tight">
+                        ADITYA CHOPRA
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-12">
+                    <a href="index.html" class="text-sm font-medium text-gray-900 border-b-2 border-black">Profile</a>
+                    <a href="engagements.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition">Engagements</a>
+                    <!-- <a href="blog.html" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition">Insights</a> -->
+                    <a href="#contact" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-900 p-2">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="profile-image-container">
-          <!-- Add your photo as profile.jpg in images folder -->
-          <div class="profile-placeholder">Aditya Chopra</div>
-          <img src="images/profile.jpg" alt="Your Name" class="profile-image">
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full">
+            <div class="px-4 pt-4 pb-6 space-y-2 shadow-lg">
+                <a href="index.html" class="block py-2 text-gray-900 font-medium">Profile</a>
+                <a href="projects.html" class="block py-2 text-gray-600 hover:text-gray-900">Case Studies</a>
+                <a href="blog.html" class="block py-2 text-gray-600 hover:text-gray-900">Insights</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-gray-900">Contact</a>
+            </div>
         </div>
-      </section>
+    </nav>
 
-      <section class="about fade-in">
-        <p>
-          I'm a full stack developer based in <span class="highlight">Pune, India</span>, building Ai products that make a difference. Currently leading competitive intelligence automation at 
-          <a href="https://www.aspectratioai.com/" class="company-link">Aspect Ratio</a>.
-        </p>
-        <p>
-          I'm also an IIT Madras alumnus.
-        </p>
-      </section>
-
-      <section class="current fade-in">
-        <h2>Currently</h2>
-        <div class="current-grid">
-          <div class="current-item">
-            <span class="current-label">Building</span>
-            <span class="current-value">Ai Solutions at Aspect Ratio</span>
-          </div>
-          <div class="current-item">
-            <span class="current-label">Learning</span>
-            <span class="current-value">Rust & Systems Programming</span>
-          </div>
-          <div class="current-item">
-            <span class="current-label">Reading</span>
-            <span class="current-value">Designing Data-Intensive Applications</span>
-          </div>
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        
+        <div class="mb-16 border-l-4 border-gray-900 pl-6">
+            <h2 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-2">Strategy & Automation</h2>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-firm-navy leading-tight">
+                Institutionalizing Foresight for <br/>Global Enterprise.
+            </h1>
         </div>
-      </section>
 
-      <section class="connect fade-in">
-        <h2>Let's Connect</h2>
-        <div class="social-links">
-          <a href="https://linkedin.com/in/your-username" class="social-link">
-            <span class="social-icon">in</span>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://github.com/your-username" class="social-link">
-            <span class="social-icon">gh</span>
-            <span>GitHub</span>
-          </a>
-          <a href="https://twitter.com/your-username" class="social-link">
-            <span class="social-icon">tw</span>
-            <span>Twitter</span>
-          </a>
-          <a href="mailto:your.email@example.com" class="social-link">
-            <span class="social-icon">@</span>
-            <span>Email</span>
-          </a>
+        <div class="flex flex-col md:flex-row gap-16 items-start">
+            
+            <div class="w-full md:w-1/3 flex-shrink-0">
+                <div class="relative group">
+                    <img 
+                        src="images/profile.jpg" 
+                        alt="Aditya Chopra" 
+                        class="w-full object-cover grayscale group-hover:grayscale-0 transition duration-700 ease-in-out shadow-sm"
+                    />
+                    <div class="mt-4 flex gap-4 justify-center md:justify-start">
+                        <a href="https://www.linkedin.com/in/chopra-aditya/" class="text-gray-400 hover:text-gray-900 transition" target="_blank"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="https://github.com/adicangit" class="text-gray-400 hover:text-gray-900 transition" target="_blank"><i class="fab fa-github text-xl"></i></a>
+                        <a href="mailto:chopraaditya63@gmail.com" class="text-gray-400 hover:text-gray-900 transition" target="_blank"><i class="fas fa-envelope text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-1">
+                <p class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed font-light">
+                    I lead the <span class="font-semibold text-gray-900">Competitive Intelligence Automation</span> practice at 
+                    <a href="https://www.aspectratioai.com/" target="_blank" class="text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-blue-600 transition">AspectRatio</a>, 
+                    where I serve as a strategic advisor to global enterprises—including 
+                    <span class="font-semibold text-gray-900">Merck</span>—on navigating volatile market landscapes. My work defines the intersection of Strategy and Ai Engineering: <span class="font-serif italic text-gray-800">transforming fragmented signals into the high-conviction insights that shape the leadership’s agenda.</span>
+                </p>
+
+                <hr class="border-gray-200 mb-10">
+
+                <h3 class="font-serif text-2xl text-firm-navy mb-6">Professional DNA</h3>
+                <div class="grid grid-cols-1 gap-8 mb-12">
+                    
+                    <div class="flex gap-4">
+                        <div class="mt-1 w-12 h-0.5 bg-gray-900 flex-shrink-0"></div> <div>
+                            <h4 class="text-gray-900 font-bold uppercase tracking-wide text-sm mb-2">Strategic Architect</h4>
+                            <p class="text-gray-600 leading-relaxed">
+                                I design and scale analytical frameworks that move organizations from reactive monitoring to <span class="font-medium text-gray-900">proactive market shaping</span>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="mt-1 w-12 h-0.5 bg-gray-300 flex-shrink-0"></div>
+                        <div>
+                            <h4 class="text-gray-900 font-bold uppercase tracking-wide text-sm mb-2">Technological Leverage</h4>
+                            <p class="text-gray-600 leading-relaxed">
+                                Specializing in the intersection of AI and corporate strategy, I build the digital "nervous system" required for global firms to act with precision.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="mt-1 w-12 h-0.5 bg-gray-300 flex-shrink-0"></div>
+                        <div>
+                            <h4 class="text-gray-900 font-bold uppercase tracking-wide text-sm mb-2">Execution Excellence</h4>
+                            <p class="text-gray-600 leading-relaxed">
+                                My approach is rooted in first-principles problem solving, ensuring that technological assets translate directly into <span class="font-medium text-gray-900">asymmetric competitive advantage</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-firm-light p-8 border-l-2 border-gray-900">
+                    <h3 class="font-serif text-xl text-firm-navy mb-3">Core Philosophy</h3>
+                    <p class="text-gray-600 italic leading-relaxed">
+                        "In an era of information density, the ultimate differentiator is not just the possession of data, but the <span class="font-semibold not-italic text-gray-900">speed of the insight-to-action loop</span>."
+                    </p>
+                </div>
+            </div>
         </div>
-      </section>
     </main>
 
-    <footer>
-      <p>&copy; 2024 Your Name. Crafted with care.</p>
+    <footer id="contact" class="bg-firm-navy text-white py-16 border-t border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div>
+                <h2 class="font-serif text-2xl mb-2">Let's build the future.</h2>
+                <p class="text-gray-400 mb-6 md:mb-0">Open for strategic advisory and technical roles.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="mailto:chopraaditya63@gmail.com" class="px-6 py-3 border border-white/20 hover:bg-white hover:text-firm-navy transition duration-300">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-white/10 text-center md:text-left text-sm text-gray-500 flex flex-col md:flex-row justify-between">
+            <p>&copy; 2025 Aditya Chopra. All rights reserved.</p>
+            <div class="mt-4 md:mt-0 space-x-6">
+                <a href="https://www.linkedin.com/in/chopra-aditya/" target="_blank" class="hover:text-white transition">LinkedIn</a>
+                <a href="https://github.com/adicangit" target="_blank" class="hover:text-white transition">GitHub</a>
+            </div>
+        </div>
     </footer>
-  </div>
 
-  <script src="script.js"></script>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
